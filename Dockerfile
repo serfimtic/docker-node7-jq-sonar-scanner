@@ -20,7 +20,6 @@ RUN wget https://sonarsource.bintray.com/Distribution/sonar-scanner-cli/sonar-sc
     unzip sonar-scanner-cli-${SONAR_SCANNER_VERSION} && \
     cd /usr/bin && \
     ln -s /sonar-scanner-${SONAR_SCANNER_VERSION}/bin/sonar-scanner sonar-scanner && \
-    ln -s /usr/bin/sonar-scanner-run.sh /bin/gitlab-sonar-scanner && \
-    apk del wget
+    ln -s /usr/bin/sonar-scanner-run.sh /bin/gitlab-sonar-scanner
     
 COPY sonar-scanner-run.sh /usr/bin
