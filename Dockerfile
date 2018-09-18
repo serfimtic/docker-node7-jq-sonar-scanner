@@ -9,7 +9,8 @@ RUN apt update && apt install -y \
   openjdk-8-jdk \
   curl \
   wget \
-  jq
+  jq \
+  unzip
   
 ENV SONAR_SCANNER_VERSION 3.0.3.778
 
