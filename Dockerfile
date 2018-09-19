@@ -10,6 +10,7 @@ RUN apt update && apt install -y \
   curl \
   wget \
   jq \
+  python \
   unzip
   
 ENV SONAR_SCANNER_VERSION 3.0.3.778
