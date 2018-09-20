@@ -1,1 +1,1 @@
-# docker-node7-jq-sonar-scanner
+# docker-node8-sonar-scanner
