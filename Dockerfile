@@ -18,7 +18,7 @@ ENV SONAR_SCANNER_VERSION 3.0.3.778
 RUN curl -sL https://deb.nodesource.com/setup_8.x | bash - \
   && apt install -y nodejs
 
-RUN wget https://sonarsource.bintray.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-${SONAR_SCANNER_VERSION}.zip && \
+RUN wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-${SONAR_SCANNER_VERSION}.zip && \
     unzip sonar-scanner-cli-${SONAR_SCANNER_VERSION} && \
     cd /usr/bin && \
     ln -s /sonar-scanner-${SONAR_SCANNER_VERSION}/bin/sonar-scanner sonar-scanner && \
